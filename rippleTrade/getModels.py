@@ -73,7 +73,7 @@ for p in ["buy","sell"]:
     total = pd.merge(total,sixteen ,on=['newDate'],how='inner')
     
     #make a final predicition
-    rec2 = predictionLibrary.testFinalPrediction(total,df,p)    
+    #rec2 = predictionLibrary.testFinalPrediction(total,df,p)    
     rec , model_all  = predictionLibrary.getFinalPrediction(total,df,p)
     
     
